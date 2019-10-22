@@ -1,12 +1,17 @@
-# Machine Learning Algorithms
+# Capstone Project 
+
+# Machine Learning Algorithms from Scratch
 
 ## About
 
-Some fundamental machine learning algorithms and models from scratch to understand their inner workings and math
+Some fundamental machine learning algorithms and models from scratch to understand their inner workings and maths.
 
 ## Algorithms
-- Linear Regression
-- Logistic Regression
-- Decision Tree
-- SVM
 - K-Nearest Neighbors
+- Decision Tree
+- K-Means
+
+## Datasets from UCI Machine Learning Repository
+- Breast Cancer Wisconsin
+- MONK'S problem 
+
