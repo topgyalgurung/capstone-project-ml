@@ -2,11 +2,12 @@
 
 #### Dataset: MONK dataset UCI Machine Learning Repository
 
-Comparison of learning algorithm: 
-Which of three problems most difficult to learn?
-Binary classification problem (class 0 or 1)
+    Comparison of learning algorithm: 
+    Which of three problems most difficult to learn?
+    Binary classification problem (class 0 or 1)
 
 Three problems
+
     monk1
     monk2
     monk3 ( 5% misclassified)
