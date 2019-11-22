@@ -24,12 +24,8 @@ MONK-3   | 122 | 62:60 | 432 | 204:228
 
     1.Tree Construction
     2.Tree pruning
-
-#### Splitting Criteria
-
-    1. Pre-pruning
-    2. Post- pruning
-
+        a. Pre-pruning
+        b. Post-pruning
 
 #### Shannon's Information Theory
 Entropy 
