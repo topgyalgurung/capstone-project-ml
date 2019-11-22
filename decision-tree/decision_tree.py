@@ -104,6 +104,30 @@ def decision_tree(train_set,counter=0):
 
         return sub_tree
 
+# classification
+def classify_df(df,tree):
+    question=list(tree.keys())[0]
+    feature_name,operator,value=question.split(" ")
+    
+    if df[feature_name] == value:
+        ans=tree[question][0]
+    else:
+        ans=tree[question][1]
+    
+    # base case
+    if not isinstance(ans,dict):
+        return ans
+    # recursion
+    else:
+        residual_tree=ans
+        return classify_df(df,residual_tree)
+
+def accuracy(df,tree):
+    df["classification"]=df.apply(classify_df,args=(tree,),axis=1)
+    df["classification_correct"]=df["classification"]==df["class"]
+    accuracy=df["classification_correct"].mean()
+    return accuracy
+
 if __name__=="__main__":
 
     # load and prepare dataset
@@ -112,9 +136,12 @@ if __name__=="__main__":
     monk2_train=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/train2.csv")
     monk3_train=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/train3.csv")
     # test_set
-    monk1_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test1.csv", header=None)
-    monk2_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test2.csv", header=None)
-    monk3_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test3.csv", header=None)
+    monk1_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test1.csv")
+    monk2_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test2.csv")
+    monk3_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test3.csv")
+    # monk1_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test1.csv", header=None)
+    # monk2_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test2.csv", header=None)
+    # monk3_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test3.csv", header=None)
     monk1_tree=decision_tree(monk1_train)
     monk2_tree=decision_tree(monk2_train)
     monk3_tree=decision_tree(monk3_train)
@@ -124,9 +151,13 @@ if __name__=="__main__":
     monk2_train=monk2_train.drop("Id",axis=1)
     monk3_train=monk3_train.drop("Id",axis=1)
 
-    monk1_test=monk1_test.drop([7],axis=1)
-    monk2_test=monk2_test.drop([7],axis=1)
-    monk3_test=monk3_test.drop([7],axis=1)
+    monk1_test=monk1_test.drop("Id",axis=1)
+    monk2_test=monk2_test.drop("Id",axis=1)
+    monk3_test=monk3_test.drop("Id",axis=1)
+
+    # monk1_test=monk1_test.drop([7],axis=1)
+    # monk2_test=monk2_test.drop([7],axis=1)
+    # monk3_test=monk3_test.drop([7],axis=1)
 
     # dataframe into numpy array
     monk1_data=monk1_train.values
@@ -143,3 +174,7 @@ if __name__=="__main__":
     pprint(monk2_tree)
     print("MONK2 TREE:")
     pprint(monk3_tree)
+
+    # classify_df(monk1_train,monk1_tree)
+    # accuracy(monk1_train,monk1_tree)
+
