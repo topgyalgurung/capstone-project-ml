@@ -4,7 +4,7 @@
 
 ## About
 
-Some fundamental machine learning algorithms and models from scratch to understand their inner workings and maths.
+Some fundamental machine learning algorithms from scratch to understand their inner workings and maths.
 
 ## Algorithms
 - K-Nearest Neighbors
