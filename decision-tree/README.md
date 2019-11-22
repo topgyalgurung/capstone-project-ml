@@ -1,4 +1,4 @@
-### Decision Trees - Machine Learning 
+### Decision Trees - Machine Learning : IN PROGRESS 
 
 #### Dataset: MONK dataset UCI Machine Learning Repository
 
@@ -36,3 +36,5 @@ Dataset                | Entropy
 MONK-1        | 1.0
 MONK-2 | 0.957117428264771
 MONK-3 | 0.9998061328047111
+
+##### Information Gain for Each Attribute:
