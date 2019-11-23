@@ -3,6 +3,7 @@
 #### Dataset: MONK dataset UCI Machine Learning Repository
 
 ###### Comparison of learning algorithm: 
+###### Each has properties which make them hard to learn?
 ###### Which of three problems most difficult to learn?
 ###### Binary classification problem (class 0 or 1)
 

@@ -30,8 +30,7 @@ Test tree on validation after the split and before the split
 And see if there is an improvement in accuracy
 
 Pre pruning :
-Test set
- 
+
 Threshold - at particular set threshold, 
 
 Height- may be balanced or unbalanced 
