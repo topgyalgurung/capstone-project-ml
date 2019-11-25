@@ -14,6 +14,9 @@
 
 Some fundamental machine learning algorithms from scratch to understand their inner workings and maths.
 
+## Resources:
+* [CIS 520 Machine Learning, UPenn Notes 2018](https://alliance.seas.upenn.edu/~cis520/dynamic/2018/wiki/index.php?n=Lectures.Lectures)
+
 ## Algorithms
 - K-Nearest Neighbors
 - Decision Tree
@@ -50,5 +53,5 @@ E.g. out of 14 instances, yes=9 and no=5
 
 Information gain is difference in entropy before and after splitting 
 	                 
-             = Entropy(S) - [(weighted average * Entropy(each feature)]
-             = Entropy(S) - I(Attribute)
+    = Entropy(S) - [(weighted average * Entropy(each feature)]
+    = Entropy(S) - I(Attribute)
