@@ -1,5 +1,12 @@
 ### K Nearest Neighbor
 
+#### Steps
+
+* Load data and split into train,test and valid datasets
+* Calculate distance between two instances using any distance metrics that satisfies [distance function](https://en.wikipedia.org/wiki/Metric_(mathematics))
+* Find k most similar instances
+* Check accuracy of predictions
+
 #### Algorithm
 
 * Prepare data, normalize first
