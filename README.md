@@ -1,6 +1,14 @@
 # Capstone Project 
 
-# Machine Learning Algorithms from Scratch
+# Machine Learning Algorithms from Scratch using Python
+
+## Tools
+
+* [Python](https://www.python.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Numpy](https://numpy.org/)
+* [Anaconda](https://www.anaconda.com/)
+* [Jupyter Notebook](https://jupyter.org/)
 
 ## About
 
@@ -12,8 +20,8 @@ Some fundamental machine learning algorithms from scratch to understand their in
 - K-Means
 
 ## Datasets from UCI Machine Learning Repository
-- Breast Cancer Wisconsin
-- MONK'S problem 
+- [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
+- [MONK'S problem](https://archive.ics.uci.edu/ml/datasets/MONK's+Problems)
 
 ### 1. KNN
 
@@ -44,9 +52,3 @@ Information gain is difference in entropy before and after splitting
 	                 
              = Entropy(S) - [(weighted average * Entropy(each feature)]
              = Entropy(S) - I(Attribute)
-
-### Data Science:
-* Data cleaning
-* Feature selection
-* Data transformation 
-* Evaluation: Accuracy and speed
