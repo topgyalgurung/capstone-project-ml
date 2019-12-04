@@ -1,4 +1,4 @@
-# Capstone Project 
+# Capstone Project - Topgyal Gurung
 
 # Machine Learning Algorithms from Scratch using Python
 
