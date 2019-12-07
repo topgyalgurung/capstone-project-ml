@@ -69,5 +69,5 @@ MONK-3 | 0.9998061328047111
 
 #### Resources: 
 * [r3d3](http://www.r2d3.us/)
-	1. [R3D3 - Decision Tree (Visual Introduction to ML](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
+	1. [R3D3 - Decision Tree (Visual Introduction to ML)](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/)
 	2. [Bias and Variance Tradeoffs](http://www.r2d3.us/visual-intro-to-machine-learning-part-2/)
