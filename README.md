@@ -23,7 +23,7 @@ Some fundamental machine learning algorithms from scratch to understand their in
 - K-Means
 
 ## Datasets from UCI Machine Learning Repository
-- [Breast Cancer Wisconsin](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
+- [Breast Cancer Wisconsin (Original)](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
 - [MONK'S problem](https://archive.ics.uci.edu/ml/datasets/MONK's+Problems)
 
 
