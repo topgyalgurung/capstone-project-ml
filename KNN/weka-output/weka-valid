@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.lazy.IBk -- -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     train
+Instances:    477
+Attributes:   10
+              clump_thick
+              uniform_cell_size
+              uniform_cell_shape
+              margin_adhesion
+              sing_epithelial_cellsize
+              nuclei
+              chromatin
+              nucleoli
+              mitoses
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+Attribute mappings:
+
+Model attributes                    	    Incoming attributes
+------------------------------------	    ----------------
+(nominal) clump_thick               	--> 1 (nominal) clump_thick
+(nominal) uniform_cell_size         	--> 2 (nominal) uniform_cell_size
+(nominal) uniform_cell_shape        	--> 3 (nominal) uniform_cell_shape
+(nominal) margin_adhesion           	--> 4 (nominal) margin_adhesion
+(nominal) sing_epithelial_cellsize  	--> 5 (nominal) sing_epithelial_cellsize
+(nominal) nuclei                    	--> 6 (nominal) nuclei
+(nominal) chromatin                 	--> 7 (nominal) chromatin
+(nominal) nucleoli                  	--> 8 (nominal) nucleoli
+(nominal) mitoses                   	--> 9 (nominal) mitoses
+(nominal) class                     	--> 10 (nominal) class
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         131               97.037  %
+Incorrectly Classified Instances         4                2.963  %
+Kappa statistic                          0.9334
+Mean absolute error                      0.0392
+Root mean squared error                  0.1787
+Relative absolute error                  8.6321 %
+Root relative squared error             37.5071 %
+Total Number of Instances              135     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.085    0.957      1.000    0.978      0.935    0.995     0.995     2
+                 0.915    0.000    1.000      0.915    0.956      0.935    0.995     0.986     4
+Weighted Avg.    0.970    0.055    0.972      0.970    0.970      0.935    0.995     0.992     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 88  0 |  a = 2
+  4 43 |  b = 4
+

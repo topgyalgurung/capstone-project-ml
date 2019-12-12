@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     train
+Instances:    477
+Attributes:   10
+              clump_thick
+              uniform_cell_size
+              uniform_cell_shape
+              margin_adhesion
+              sing_epithelial_cellsize
+              nuclei
+              chromatin
+              nucleoli
+              mitoses
+              class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 2163.0
+
+Initial starting points (random):
+
+Cluster 0: 5,1,2,1,2,1,1,1,1,2
+Cluster 1: 1,1,1,2,1,1,1,1,1,2
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                        Cluster#
+Attribute                   Full Data          0          1
+                              (477.0)    (404.0)     (73.0)
+===========================================================
+clump_thick                         1          5          1
+uniform_cell_size                   1          1          1
+uniform_cell_shape                  1          1          1
+margin_adhesion                     1          1          1
+sing_epithelial_cellsize            2          2          1
+nuclei                              1          1          1
+chromatin                           3          3          2
+nucleoli                            1          1          1
+mitoses                             1          1          1
+class                               2          2          2
+
+
+
+
+Time taken to build model (full training data) : 0.02 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      404 ( 85%)
+1       73 ( 15%)
+

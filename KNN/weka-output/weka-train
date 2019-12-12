@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     train
+Instances:    477
+Attributes:   10
+              clump_thick
+              uniform_cell_size
+              uniform_cell_shape
+              margin_adhesion
+              sing_epithelial_cellsize
+              nuclei
+              chromatin
+              nucleoli
+              mitoses
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         455               95.3878 %
+Incorrectly Classified Instances        22                4.6122 %
+Kappa statistic                          0.8978
+Mean absolute error                      0.0518
+Root mean squared error                  0.2002
+Relative absolute error                 11.3795 %
+Root relative squared error             41.9724 %
+Total Number of Instances              477     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.974    0.084    0.956      0.974    0.965      0.898    0.984     0.990     2
+                 0.916    0.026    0.950      0.916    0.933      0.898    0.984     0.961     4
+Weighted Avg.    0.954    0.064    0.954      0.954    0.954      0.898    0.984     0.980     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 302   8 |   a = 2
+  14 153 |   b = 4
+
