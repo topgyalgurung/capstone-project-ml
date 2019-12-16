@@ -15,10 +15,16 @@
    weighted by inverse distance of k points closest to it.
 * Split dataset for k-optimization
 * Split data into train, test and validation set
-* Start with k=1 and keep increasing and find accuracy
+* Start with k=1 to length of train_set and find accuracy
    on validation set
 * Test k on validation set then use k to find accuracy
 
-##### Misc
+##### Notes
 
-[Voronoi Diagram- Basic Concepts Visual Introduction](https://www.youtube.com/watch?time_continue=1&v=7eCrHAv6sYY&feature=emb_logo)
+* when calculating accuracies with k=1 to train size, if accuracies same for some k take max k
+* if taking k points, there could be some points with zero distance due to which inverse weighted could backfire because that would be infinity. For such case, do Smoothing. Not to use inverse but rather 1/(d+1) that ensures d never 0.
+
+##### Misc
+* [Commercial C5.0 Version](https://www.rulequest.com/see5-unix.html)
+
+* [Voronoi Diagram- Basic Concepts Visual Introduction](https://www.youtube.com/watch?time_continue=1&v=7eCrHAv6sYY&feature=emb_logo)

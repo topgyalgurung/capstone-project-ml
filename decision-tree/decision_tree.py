@@ -132,16 +132,16 @@ if __name__=="__main__":
 
     # load and prepare dataset
     # train_set
-    monk1_train=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/train1.csv")
-    monk2_train=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/train2.csv")
-    monk3_train=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/train3.csv")
+    monk1_train=pd.read_csv("~/train1.csv")
+    monk2_train=pd.read_csv("~/train2.csv")
+    monk3_train=pd.read_csv("~/train3.csv")
     # test_set
-    monk1_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test1.csv")
-    monk2_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test2.csv")
-    monk3_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test3.csv")
-    # monk1_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test1.csv", header=None)
-    # monk2_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test2.csv", header=None)
-    # monk3_test=pd.read_csv("/Users/topgyalgurung/Desktop/monk-dataset/test3.csv", header=None)
+    monk1_test=pd.read_csv("~/test1.csv")
+    monk2_test=pd.read_csv("~/test2.csv")
+    monk3_test=pd.read_csv("~/test3.csv")
+    # monk1_test=pd.read_csv("~/test1.csv", header=None)
+    # monk2_test=pd.read_csv("~/test2.csv", header=None)
+    # monk3_test=pd.read_csv("~/test3.csv", header=None)
     monk1_tree=decision_tree(monk1_train)
     monk2_tree=decision_tree(monk2_train)
     monk3_tree=decision_tree(monk3_train)
