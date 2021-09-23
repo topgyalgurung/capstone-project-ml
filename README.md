@@ -14,13 +14,6 @@
 
 Some fundamental machine learning algorithms from scratch to understand their inner workings and maths.
 
-## Resources:
-* [Tom Mitchell - Carnegie Melon University](http://www.cs.cmu.edu/~tom/)
-  1. [Tom Mitchell Machine Learning course](http://www.cs.cmu.edu/~tom/10701_sp11/)
-  2. [ML Book Chapter book slides](http://www.cs.cmu.edu/~tom/mlbook-chapter-slides.html)
-* [CIS 520 Machine Learning, UPenn Notes 2018](https://alliance.seas.upenn.edu/~cis520/dynamic/2018/wiki/index.php?n=Lectures.Lectures)
-* [Introduction to Linear Algebra, Fifth Edition (2016)](http://math.mit.edu/~gs/linearalgebra/)
-
 ## Algorithms
 - K-Nearest Neighbors
 - Decision Tree
@@ -30,4 +23,10 @@ Some fundamental machine learning algorithms from scratch to understand their in
 - [Breast Cancer Wisconsin (Original)](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original))
 - [MONK'S problem](https://archive.ics.uci.edu/ml/datasets/MONK's+Problems)
 
+## Resources:
+* [Tom Mitchell - Carnegie Melon University](http://www.cs.cmu.edu/~tom/)
+  1. [Tom Mitchell Machine Learning course](http://www.cs.cmu.edu/~tom/10701_sp11/)
+  2. [ML Book Chapter book slides](http://www.cs.cmu.edu/~tom/mlbook-chapter-slides.html)
+* [CIS 520 Machine Learning, UPenn Notes 2018](https://alliance.seas.upenn.edu/~cis520/dynamic/2018/wiki/index.php?n=Lectures.Lectures)
+* [Introduction to Linear Algebra, Fifth Edition (2016)](http://math.mit.edu/~gs/linearalgebra/)
 
